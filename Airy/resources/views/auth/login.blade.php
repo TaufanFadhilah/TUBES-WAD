@@ -1,11 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
+<style media="screen">
+  fieldset{
+    margin-top: 30px;
+  }
+  h3{
+    font-family: Sansation_Regular;
+    color: #00bfff;
+  }
+</style>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Masuk</div>
+              <fieldset>
+                  <legend><h3>Masuk</h3></legend>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -51,17 +61,18 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-danger">
-                                    Login
+                                <button type="submit" class="btn btn-primary  blue accent-1">
+                                    Masuk
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
+                                <a class="btn btn-link  blue accent-1" href="{{ route('password.request') }}">
+                                  Lupa Password ?
                                 </a>
                             </div>
                         </div>
                     </form>
                 </div>
+                </fieldset>
             </div>
         </div>
     </div>
