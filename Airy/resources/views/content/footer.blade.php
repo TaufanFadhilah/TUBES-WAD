@@ -1,10 +1,6 @@
-<style media="screen">
-  #footer{
-    margin-top: 100px;
-  }
-</style>
+
 <footer class="page-footer   blue accent-1" id="footer">
-    <div class="container">
+    {{-- <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Footer Content</h5>
@@ -20,11 +16,11 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> --}}
     <div class="footer-copyright">
       <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © Airy 2017 !
+      <a class="grey-text text-lighten-4 right" href="#!">Hubungi Kami</a>
       </div>
     </div>
   </footer>
