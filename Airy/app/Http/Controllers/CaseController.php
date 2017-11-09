@@ -13,7 +13,7 @@ class CaseController extends Controller
      */
     public function index()
     {
-        //
+        return view('case.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class CaseController extends Controller
      */
     public function create()
     {
-        //
+        return view('case.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class CaseController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('case.show');
     }
 
     /**
@@ -56,7 +56,7 @@ class CaseController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('case.edit');
     }
 
     /**

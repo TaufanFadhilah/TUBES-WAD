@@ -14,7 +14,7 @@ class DonateController extends Controller
      */
     public function index()
     {
-        //
+        return view('donate.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class DonateController extends Controller
      */
     public function create()
     {
-        //
+        return view('donate.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class DonateController extends Controller
      */
     public function show(Donate $donate)
     {
-        //
+        return view('donate.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class DonateController extends Controller
      */
     public function edit(Donate $donate)
     {
-        //
+        return view('donate.edit');
     }
 
     /**
