@@ -1,8 +1,8 @@
 <?php
 
-namespace Airy\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Airy\Donate;
+use App\Donate;
 use Illuminate\Http\Request;
 
 class DonateController extends Controller
@@ -41,7 +41,7 @@ class DonateController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Airy\Donate  $donate
+     * @param  \App\Donate  $donate
      * @return \Illuminate\Http\Response
      */
     public function show(Donate $donate)
@@ -52,7 +52,7 @@ class DonateController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \Airy\Donate  $donate
+     * @param  \App\Donate  $donate
      * @return \Illuminate\Http\Response
      */
     public function edit(Donate $donate)
@@ -64,7 +64,7 @@ class DonateController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Airy\Donate  $donate
+     * @param  \App\Donate  $donate
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Donate $donate)
@@ -75,7 +75,7 @@ class DonateController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Airy\Donate  $donate
+     * @param  \App\Donate  $donate
      * @return \Illuminate\Http\Response
      */
     public function destroy(Donate $donate)

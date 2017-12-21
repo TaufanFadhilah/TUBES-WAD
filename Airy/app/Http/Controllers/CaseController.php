@@ -1,7 +1,8 @@
 <?php
 
-namespace Airy\Http\Controllers;
+namespace App\Http\Controllers;
 
+use App\Cases;
 use Illuminate\Http\Request;
 
 class CaseController extends Controller
@@ -13,7 +14,9 @@ class CaseController extends Controller
      */
     public function index()
     {
-        return view('case.index');
+        return view('case.index',[
+          'data' => Cases::all()
+        ]);
     }
 
     /**
@@ -34,51 +37,56 @@ class CaseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Cases::create($request->all());
+        return redirect(route('case.index'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Cases  $Cases
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Cases $Cases)
     {
-        return view('case.show');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Cases  $Cases
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Cases $case)
     {
-        return view('case.edit');
+        return view('case.edit',[
+          'data' => $case
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Cases  $Cases
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Cases $case)
     {
-        //
+        $case->update($request->all());
+        return redirect(route('case.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Cases  $Cases
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Cases $case)
     {
-        //
+        $case->delete();
+        return redirect(route('case.index'));
     }
 }

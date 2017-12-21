@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Airy\Providers\AppServiceProvider::class,
-        Airy\Providers\AuthServiceProvider::class,
-        // Airy\Providers\BroadcastServiceProvider::class,
-        Airy\Providers\EventServiceProvider::class,
-        Airy\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 

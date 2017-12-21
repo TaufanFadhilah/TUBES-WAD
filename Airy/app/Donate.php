@@ -1,6 +1,6 @@
 <?php
 
-namespace Airy;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
